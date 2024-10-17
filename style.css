@@ -1,12 +1,13 @@
 
 body {
     margin: 0;
+    background-color: #638479;
 }
-
+/*sticky*/
 .sticky {
     position: sticky;
     top: 0;
-    background-color: #212721;
+    background-color: #24332E;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -31,10 +32,14 @@ nav li, h1 {
 nav li:hover {
     text-decoration: underline;
 }
+a {
+    text-decoration: none;
+    color: white;
+}
 .dropdown {
     display: none;
     position: absolute;
-    background-color: #4CAF50;
+    background-color: #D9745B;
     list-style-type: none;
     opacity: 0;
     transform: translateY(-10px);
@@ -45,12 +50,49 @@ nav li:hover {
 nav li:hover .dropdown {
     display: block;
     opacity: 1;
-    transform: translateX(-40%)
+    transform: translateX(-30%)
 }
 .dropdown li{
     text-align: left;
     padding: 7px 10px;
 }
 .dropdown li:hover {
-    background-color: #3e8e41;
+    background-color: #A15643;
+}
+/*flexbox contacts*/
+
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+.contact-details a {
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.contact-item {
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+    background: none; /* Remove box background */
+}
+
+.contact-item:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Subtle hover effect */
+}
+
+.contact-details {
+    display: none;
+    padding: 10px 0;
+    color: white;
+}
+
+.contact-item.active .contact-details {
+    display: block;
 }
