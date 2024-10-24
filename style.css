@@ -105,3 +105,16 @@ nav li:hover .dropdown {
 .contact-item.active .contact-details {
     display: block;
 }
+
+/*ukol pointer*/
+.item div{
+    cursor: pointer;
+}
+
+/*parallax, obrazky*/
+.bg {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
